@@ -5,7 +5,7 @@ import java.util.Iterator;
 import java.util.Random;
 import java.util.TreeSet;
 
-public class zad2 {
+public class zadd4 {
     public static void main(String[] args){
     Random losujLiczby = new Random();
     TreeSet<Integer> treeRand = new TreeSet<>(); 
