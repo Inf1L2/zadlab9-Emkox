@@ -4,7 +4,7 @@ package pl.edu.ur.oopl9;
 import java.util.Arrays;
 import java.util.Random;
 
-public class z1 {
+public class zad1 {
     public static void Main(String[] args){
     Random losujLiczby = new Random(); 
     int[] a = new int[100];
