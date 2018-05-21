@@ -1,27 +1,41 @@
-
 package pl.edu.ur.oopl9;
 
-import java.util.Iterator;
-import java.util.Random;
-import java.util.TreeSet;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Scanner;
 
-public class zadd4 {
-    public static void main(String[] args){
-    Random losujLiczby = new Random();
-    TreeSet<Integer> treeRand = new TreeSet<>(); 
-    int k = 5 ;
-    int[] a = new int[100];
-    for(int i=0; i<100;i++){
-    
-    treeRand.add(losujLiczby.nextInt(k));
- 
-    }
-    
-    Iterator tree = treeRand.iterator();
-    while(tree.hasNext())
-        {
-            Integer war = (Integer)tree.next();
-            System.out.println("Wartosc: "+war);
-        }
+public class zadd4{
+       public static void main(String[] args){
+       HashMap<String,String> hm = new HashMap<>();
+       hm.put("Dog","Pies");
+       hm.put("Cat","Kot");
+       hm.put("Apple","Jablko");
+       hm.put("Cherry","Wisnia");
+       hm.put("Dictionary","Slownik");
+       hm.put("Journalist","Dziennikarz");
+       hm.put("Thing","Rzecz");
+       hm.put("You","Ty");
+       hm.put("Be","Byc");
+       hm.put("Bee","Osa");
+       hm.put("Car","Samochod");
+       hm.put("Beach","Plaza");
+       hm.put("Unit","Rozdzial");
+       hm.put("Part","Czesc");
+       hm.put("Party","Impreza");
+       hm.put("Vodka","Wodka");
+       hm.put("Beer","Piwo");
+       hm.put("Shot","Strzal");
+       hm.put("Methanol","Metanol");
+       hm.put("Hand","Reka");
+       hm.put("Koniec","Program stop !");
+       
+       Scanner x = new Scanner(System.in);
+       String slowo;
+           System.out.println("Podaj slowo : ");
+       
+       do{
+            slowo = x.nextLine();
+            System.out.println(slowo+"-"+hm.get(slowo));
+        }while("Koniec".equals(slowo));
 }
 }
